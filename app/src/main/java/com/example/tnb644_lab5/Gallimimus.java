@@ -1,7 +1,7 @@
 package com.example.tnb644_lab5;
 
-public class Gallimius extends Theropod{
-    public Gallimius(String name, Boolean isVegetarian){
+public class Gallimimus extends Theropod{
+    public Gallimimus(String name, Boolean isVegetarian){
         super.setDinosaur(name, isVegetarian);
     }
     /**

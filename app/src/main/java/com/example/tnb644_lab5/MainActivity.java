@@ -16,28 +16,30 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         c = getApplicationContext();
-        Button ZoneX = findViewById(R.id./* FIX ME */);
-        Button ZoneB = findViewById(R.id./* FIX ME */);
-        Button ZoneG = findViewById(R.id./* FIX ME */);
-        Button ZoneD = findViewById(R.id./* FIX ME */);
-        Button ZoneR = findViewById(R.id./* FIX ME */);
-        Button ZoneTR = findViewById(R.id./* FIX ME */);
-        Button ZoneTY = findViewById(R.id./* FIX ME */);
+        Button ZoneX = findViewById(R.id.ZoneX);
+        Button ZoneB = findViewById(R.id.ZoneB);
+        Button ZoneG = findViewById(R.id.ZoneG);
+        Button ZoneD = findViewById(R.id.ZoneD);
+        Button ZoneR = findViewById(R.id.ZoneR);
+        Button ZoneTR = findViewById(R.id.ZoneTR);
+        Button ZoneTY = findViewById(R.id.ZoneTY);
 
-        ZoneX.setOnClickListener(new MainController("Zone X", c));
-        ZoneB.setOnClickListener(new MainController("Zone B", c));
-        ZoneG.setOnClickListener(new MainController("Zone G", c));
-        ZoneD.setOnClickListener(new MainController("Zone D", c));
-        ZoneR.setOnClickListener(new MainController("Zone R", c));
-        ZoneTR.setOnClickListener(new MainController("Zone TR", c));
-        ZoneTY.setOnClickListener(new MainController("Zone TY", c));
+        ZoneX.setOnClickListener(new MainController("X", c));
+        ZoneB.setOnClickListener(new MainController("B", c));
+        ZoneG.setOnClickListener(new MainController("G", c));
+        ZoneD.setOnClickListener(new MainController("D", c));
+        ZoneR.setOnClickListener(new MainController("R", c));
+        ZoneTR.setOnClickListener(new MainController("TR", c));
+        ZoneTY.setOnClickListener(new MainController("TY", c));
+
+
 
 
         /**
          *
          *
          * DONE -- Initialize buttons for all of the 7 zones
-         * Connect the 7 zone buttons to their ids in the xml layout
+         * DONE -- Connect the 7 zone buttons to their ids in the xml layout
          * DONE -- Get the context of the activity and store it in c
          * EX: MainController(zoneType, c)
          */

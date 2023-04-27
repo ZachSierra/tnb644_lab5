@@ -3,21 +3,45 @@ package com.example.tnb644_lab5;
 import java.util.ArrayList;
 
 public class Zone {
-    private String name;
+    private String fullName;
+    private String riskLevel;
+    private String abbreviation;
+
     private int numGuests;
     ArrayList<Dinosaur> dinosaur;
-    public Zone(String name, int numGuests) {
-        this.name = name;
+    public Zone(String fullName,String riskLevel, String abbreviation, int numGuests) {
+        this.fullName = fullName;
+        this.riskLevel = riskLevel;
+        this.abbreviation = abbreviation;
         this.numGuests = numGuests;
         dinosaur = new ArrayList<>();
     }
-
-    public String getName() {
-        return name;
+    public void addDino(Dinosaur d){
+        dinosaur.add(d);
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getFullname() {
+        return fullName;
+    }
+
+    public void setFullname(String fullname) {
+        this.fullName = fullname;
+    }
+
+    public String getRiskLevel() {
+        return riskLevel;
+    }
+
+    public void setRiskLevel(String riskLevel) {
+        this.riskLevel = riskLevel;
+    }
+
+    public String getAbbreviation() {
+        return abbreviation;
+    }
+
+    public void setAbbreviation(String abbreviation) {
+        this.abbreviation = abbreviation;
     }
 
     public int getNumGuests() {

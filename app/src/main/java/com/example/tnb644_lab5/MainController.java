@@ -20,6 +20,8 @@ public class MainController implements View.OnClickListener{
     public void onClick(View view) {
         /** DONE **/
         Intent i = new Intent(view.getContext() , ZoneActivity.class );
+        ZonedParkMaker zp = new ZonedParkMaker();
+        zp.makeZonedPark(c);
         i.putExtra(ZoneActivity.EXTRA_MESSAGE, zoneType);
         view.getContext().startActivity(i);
 

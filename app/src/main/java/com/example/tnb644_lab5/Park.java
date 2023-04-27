@@ -23,6 +23,7 @@ public class Park {
         //creates the park name, sets the max capacity, and creates the dinosaur array
         this.name = name;
         dinosaur = new ArrayList<>();
+        zone = new ArrayList<>();
 
     }
 
